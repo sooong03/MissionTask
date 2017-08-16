@@ -76,6 +76,8 @@ public class ElementButton extends LinearLayout {
 
     } // set Type Array
 
+
+
     void setIcon(int iconId){
         icon.setImageResource(iconId);
     }
@@ -91,6 +93,7 @@ public class ElementButton extends LinearLayout {
     void setText(int nameId){
         name.setText(nameId);
     }
+
 
 } // class Element Button
 

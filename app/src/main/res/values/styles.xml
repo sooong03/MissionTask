@@ -13,6 +13,7 @@
         <item name="android:layout_height">48dp</item>
         <item name="android:layout_margin">2dp</item>
         <item name="android:clickable">true</item>
+        <item name="android:onClick">checkElements</item>
     </style>
 
 </resources>

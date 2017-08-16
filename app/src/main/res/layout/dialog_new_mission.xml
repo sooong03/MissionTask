@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <EditText
+        android:id="@+id/ed_mission_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Mission Title"
+        android:textSize="15sp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        >
+
+        <kr.anima.xd.s.missiontask.ElementButton
+            android:id="@+id/btn_1"
+            style="@style/BtnElement"
+            app:symbol="@drawable/ic_element_appearance"
+            app:text="@string/element_appearance"/>
+        <kr.anima.xd.s.missiontask.ElementButton
+            android:id="@+id/btn_2"
+            style="@style/BtnElement"
+            app:symbol="@drawable/ic_element_business"
+            app:text="@string/element_business"/>
+        <kr.anima.xd.s.missiontask.ElementButton
+            android:id="@+id/btn_3"
+            style="@style/BtnElement"
+            app:symbol="@drawable/ic_element_education"
+            app:text="@string/element_education"/>
+
+        <kr.anima.xd.s.missiontask.ElementButton
+            android:id="@+id/btn_4"
+            style="@style/BtnElement"
+            app:symbol="@drawable/ic_element_emotional"
+            app:text="@string/element_emotional"/>
+        <kr.anima.xd.s.missiontask.ElementButton
+            android:id="@+id/btn_5"
+            style="@style/BtnElement"
+            app:symbol="@drawable/ic_element_environment"
+            app:text="@string/element_environment"/>
+        <kr.anima.xd.s.missiontask.ElementButton
+            android:id="@+id/btn_6"
+            style="@style/BtnElement"
+            app:symbol="@drawable/ic_element_finances"
+            app:text="@string/element_finances"/>
+
+        <kr.anima.xd.s.missiontask.ElementButton
+            android:id="@+id/btn_7"
+            style="@style/BtnElement"
+            app:symbol="@drawable/ic_element_health"
+            app:text="@string/element_health"/>
+        <kr.anima.xd.s.missiontask.ElementButton
+            android:id="@+id/btn_8"
+            style="@style/BtnElement"
+            app:symbol="@drawable/ic_element_relationships"
+            app:text="@string/element_relationships"/>
+        <kr.anima.xd.s.missiontask.ElementButton
+            android:id="@+id/btn_9"
+            style="@style/BtnElement"
+            app:symbol="@drawable/ic_element_spirituality"
+            app:text="@string/element_spirituality"/>
+
+    </GridLayout>
+
+</LinearLayout>

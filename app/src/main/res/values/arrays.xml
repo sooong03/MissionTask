@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="element_string">
+        <item>건강</item>
+        <item>재정</item>
+        <item>감정</item>
+        <item>환경</item>
+        <item>관계</item>
+        <item>외면</item>
+        <item>교육</item>
+        <item>정신</item>
+        <item>사업</item>
+    </string-array>
+
+    <array name="element_icon">
+        <item>R.drawable.ic_element_health</item>
+        <item>R.drawable.ic_element_finances</item>
+        <item>R.drawable.ic_element_emotional</item>
+        <item>R.drawable.ic_element_environment</item>
+        <item>R.drawable.ic_element_relationships</item>
+        <item>R.drawable.ic_element_appearance</item>
+        <item>R.drawable.ic_element_education</item>
+        <item>R.drawable.ic_element_spirituality</item>
+        <item>R.drawable.ic_element_business</item>
+    </array>
+    
+</resources>

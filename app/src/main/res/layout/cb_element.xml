@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="48dp"
+    android:layout_height="48dp">
+
+    <CheckBox
+        android:id="@+id/CB"
+        style="@style/CheckBox"
+        android:drawableTop="@drawable/ic_sel_ele_appearance"
+        android:text="@string/element_appearance"
+        android:button="@null"/>
+
+</RelativeLayout>
+
+

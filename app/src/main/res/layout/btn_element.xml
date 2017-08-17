@@ -6,19 +6,34 @@
     android:gravity="center_horizontal"
     android:id="@+id/LL_bg">
 
-    <ImageView
-        android:id="@+id/IV_icon"
+    <!--<ImageView-->
+        <!--android:id="@+id/IV_icon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_element_unactive_appearance"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:layout_marginBottom="4dp"/>-->
+
+    <CheckBox
+        android:id="@+id/CB_symbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_element_appearance"
-        android:scaleType="centerCrop"
-        android:layout_marginBottom="4dp"/>
-    <TextView
-        android:id="@+id/TV_name"
+        android:layout_marginBottom="4dp"
+        android:button="@@drawable/ic_element_active_appearance"
+        android:text="@string/element_appearance"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="@color/btn_element_txt"
+        />
+    <CheckedTextView
+        android:id="@+id/CTV_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_sel_ele_appearance"
         android:text="appearance"
         android:textSize="13sp"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true"
+        android:textColor="@color/btn_element_txt"/>
 
 </LinearLayout>

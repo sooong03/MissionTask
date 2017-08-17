@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/edMissionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Mission Title"
+        android:textSize="15sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/viewElement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/TV_dateOfStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:clickable="true"/>
+    <!--<GridLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:columnCount="3"-->
+        <!--&gt;-->
+
+
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/CB_1"-->
+            <!--style="@style/CheckBox"-->
+            <!--android:drawableTop="@drawable/ic_sel_ele_appearance"-->
+            <!--android:text="@string/element_appearance"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/CB_2"-->
+            <!--style="@style/CheckBox"-->
+            <!--android:drawableTop="@drawable/ic_sel_ele_business"-->
+            <!--android:text="@string/element_business"/>-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/CB_3"-->
+            <!--style="@style/CheckBox"-->
+            <!--android:drawableTop="@drawable/ic_sel_ele_education"-->
+            <!--android:text="@string/element_education"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/CB_4"-->
+            <!--style="@style/CheckBox"-->
+            <!--android:drawableTop="@drawable/ic_sel_ele_emotional"-->
+            <!--android:text="@string/element_emotional"/>-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/CB_5"-->
+            <!--style="@style/CheckBox"-->
+            <!--android:drawableTop="@drawable/ic_sel_ele_environment"-->
+            <!--android:text="@string/element_environment"/>-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/CB_6"-->
+            <!--style="@style/CheckBox"-->
+            <!--android:drawableTop="@drawable/ic_sel_ele_finances"-->
+            <!--android:text="@string/element_finances"/>-->
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/CB_7"-->
+            <!--style="@style/CheckBox"-->
+            <!--android:drawableTop="@drawable/ic_sel_ele_health"-->
+            <!--android:text="@string/element_health"/>-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/CB_8"-->
+            <!--style="@style/CheckBox"-->
+            <!--android:drawableTop="@drawable/ic_sel_ele_relationships"-->
+            <!--android:text="@string/element_relationships"/>-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/CB_9"-->
+            <!--style="@style/CheckBox"-->
+            <!--android:drawableTop="@drawable/ic_sel_ele_spirituality"-->
+            <!--android:text="@string/element_spirituality"/>-->
+
+    <!--</GridLayout>-->
+
+</LinearLayout>

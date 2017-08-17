@@ -2,10 +2,13 @@ package kr.anima.xd.s.missiontask;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CheckedTextView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -19,8 +22,10 @@ public class ElementButton extends LinearLayout {
     private Context context;
 
     private LinearLayout background;
-    private ImageView icon;
-    private TextView name;
+//    private ImageView icon;
+    private CheckBox symbol;
+    private CheckedTextView name;
+
 
     public ElementButton(Context context) {
         super(context);
@@ -48,8 +53,8 @@ public class ElementButton extends LinearLayout {
         addView(v);
 
         background=findViewById(R.id.LL_bg);
-        icon=findViewById(R.id.IV_icon);
-        name=findViewById(R.id.TV_name);
+        symbol=findViewById(R.id.CB_symbol);
+        name=findViewById(R.id.CTV_name);
 
     } // initView
 
@@ -66,11 +71,15 @@ public class ElementButton extends LinearLayout {
     }
 
     private void setTypeArray(TypedArray typeArray){
-        int iconId=typeArray.getResourceId(R.styleable.BtnElement_symbol, R.drawable.ic_element_appearance);
-        icon.setImageResource(iconId);
+        int iconId=typeArray.getResourceId(R.styleable.BtnElement_symbol, R.drawable.ic_element_unactive_appearance);
+        symbol.setButtonDrawable(iconId);
+//        icon.setImageResource(iconId);
 
         String text=typeArray.getString(R.styleable.BtnElement_text);
         name.setText(text);
+
+        int color=typeArray.getResources().getColor(R.color.btn_element_txt);
+        name.setTextColor(color);
 
         typeArray.recycle();
 
@@ -79,7 +88,8 @@ public class ElementButton extends LinearLayout {
 
 
     void setIcon(int iconId){
-        icon.setImageResource(iconId);
+        symbol.setBackgroundResource(iconId);
+//        icon.setImageResource(iconId);
     }
 
     void setTextColor(int color){

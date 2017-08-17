@@ -1,15 +1,10 @@
 package kr.anima.xd.s.missiontask;
 
-import android.app.Dialog;
 import android.content.DialogInterface;
-import android.os.Build;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import static kr.anima.xd.s.missiontask.R.layout.dialog_new_mission;
 

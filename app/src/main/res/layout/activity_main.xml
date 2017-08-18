@@ -28,6 +28,15 @@
             android:onClick="clickBtn"/>
     </LinearLayout>
 
+    <Switch
+        android:id="@+id/sw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/element_appearance"
+        android:gravity="fill_horizontal|center_vertical"
+        android:checked="true"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list_mission"
